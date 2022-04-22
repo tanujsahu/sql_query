@@ -1,0 +1,13 @@
+ #-------------------------------------
+ create database db #------------ create database
+ use db #------------ use database
+ create table user(_id int NOT NULL PRIMARY KEY AUTO_INCREMENT,u_name nvarchar(50),city nvarchar(50)); #------------ create user table
+ insert into user(u_name,city) values('tanuj sahu','kanpur'); #------------ insert data
+ insert into user(u_name,city) values('ashish sahu','jaipur'); #------------ insert data
+ select *from user; #------------ select user
+ update user set u_name= 'Shivam', city= 'Kanpur' where _id=1; #------------ update user whoes _id=1
+ delete from user where _id=1; #------------ delete user whoes _id=1
+ truncate table user; #------------ delete all from user table
+ drop table user;     #------------drop user table
+ alter table user add age int;   #------------ add extra column inside our table
+ alter table user drop age; #------------ drop particular column from the table
